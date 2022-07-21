@@ -794,6 +794,7 @@ margin-left: calc(-1 * var(--cardset-gap));
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 
     min-width: 528px;
     min-height: 581px;
@@ -804,6 +805,78 @@ margin-left: calc(-1 * var(--cardset-gap));
 
     transition: transform 250ms var(--cubik) ;
 
+}
+
+.modal-title {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--heder-list);
+        margin-bottom: 30px;
+}
+
+.form-name {
+    margin-bottom: 10px;
+}
+
+.form-name-label {
+    text-align: left;
+        display: block;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: var(--color-text);
+        margin-bottom: 8px;
+}
+
+.form-input {
+    position: relative;
+}
+
+.form-name-input {
+    width: 100%;
+        height: 40px;
+        padding-top: 12px;
+        padding-right: 42px;
+        padding-bottom: 12px;
+        padding-left: 42px;
+        background: var(--fotter-list);
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
+}
+
+.form-name-input-textarea {
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    height: 120px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    resize: none;
+}
+
+.form-name-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: var(--heder-list);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close {
@@ -818,4 +891,10 @@ margin-left: calc(-1 * var(--cardset-gap));
     background-color: var(--fotter-list);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 100%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close:hover {
+    color: var(--color-blue);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
