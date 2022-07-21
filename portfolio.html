@@ -323,6 +323,31 @@
             </li>
           </ul>
         </div>
+        <form
+          class="subscribe-form"
+          name="subscribe-form"
+          autocomplete="on"
+          novalidate
+        >
+          <div class="subscribe">
+            <label class="subscribe-label" for="email"
+              >Подпишитесь на рассылку</label
+            >
+          </div>
+          <div class="subscribe-control">
+            <input
+              class="subscribe-input"
+              id="email"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/symbol-defs-send.svg#icon-icon-send"></use>
+            </svg>
+            <button class="subscribe-btn" type="submit">Подписаться</button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
